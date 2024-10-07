@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./images/背景.jpg');
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.cart-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px; /* 设置最大宽度 */
+    text-align: center;
+}
+
+.cart-item {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px; /* 设置最大宽度 */
+    text-align: center;
+}
+
+#cart-list p {
+    font-size: 1.5em; /* 增加无商品提示的字体大小 */
+}

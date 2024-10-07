@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发布商品</title>
+    <link rel="stylesheet" href="./05-publish.css">
+</head>
+<body>
+    <header>
+        <h1>发布商品</h1>
+    </header>
+
+    <div class="publish-container">
+        <form id="publish-form">
+            <label for="product-name">商品名称：</label>
+            <input type="text" id="product-name" name="product-name" required>
+
+            <label for="product-image">商品图片：</label>
+            <input type="file" id="product-image" name="product-image" accept="image/*" required>
+
+            <button type="submit">发布</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 骑行二手交易市场. 版权所有.</p>
+    </footer>
+    <script src="./05-publish.js"></script>
+</body>
+</html>

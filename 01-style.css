@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 统一设置所有元素的盒模型为border-box，避免布局错乱 */
+}
+
+body {
+    font-family: Arial, sans-serif; /* 设置页面的默认字体 */
+    background-image: url('./images/背景.jpg'); /* 设置背景图片 */
+    background-size: cover; /* 背景图片覆盖整个页面 */
+    color: #333; /* 设置文字颜色为深灰色 */
+    line-height: 1.6; /* 增加文本的行高，提升可读性 */
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* 设置半透明的黑色背景 */
+    color: #fff; /* 设置文字颜色为白色 */
+    padding: 1rem; /* 添加上下左右的内边距 */
+    text-align: center; /* 居中对齐文本 */
+}
+
+nav ul {
+    list-style: none; /* 移除列表前的默认样式 */
+}
+
+nav ul li {
+    display: inline; /* 将列表项显示为内联元素 */
+    margin: 0 15px; /* 列表项之间添加左右间距 */
+}
+
+nav ul li a {
+    color: #fff; /* 设置链接文字颜色为白色 */
+    text-decoration: none; /* 移除链接的下划线 */
+    font-size: 1.2rem; /* 增大字体大小 */
+    padding: 0.5rem; /* 为链接添加内边距 */
+}
+
+#search-filter {
+    display: flex; /* 使用Flexbox布局 */
+    flex-direction: column; /* 让子元素纵向排列 */
+    align-items: center; /* 子元素水平居中对齐 */
+    margin: 20px; /* 在搜索过滤区域外部添加间距 */
+}
+
+#search-filter .top-row {
+    display: flex; /* 使用Flexbox布局，子元素横向排列 */
+    justify-content: center; /* 子元素居中对齐 */
+    margin-bottom: 10px; /* 添加底部间距 */
+}
+
+#search-filter label {
+    font-size: 1.2rem; /* 设置评分标签的字体大小 */
+    margin-top: 10px; /* 增加标签与按钮之间的间距 */
+}
+
+#filter-select {
+    font-size: 1rem; /* 设置下拉框的字体大小 */
+    margin-left: 10px; /* 增加标签和下拉框之间的间距 */
+}
+
+#search-filter button {
+    padding: 0.7rem 1.5rem; /* 调整按钮的内边距，增大点击区域 */
+    font-size: 1.2rem; /* 增大按钮的字体 */
+}
+
+#search-filter input {
+    padding: 0.5rem; /* 设置搜索框的内边距 */
+    font-size: 1rem; /* 设置搜索框的字体大小 */
+    margin-right: 10px; /* 增加搜索框与按钮之间的间距 */
+}
+
+#search-filter select {
+    font-size: 1rem; /* 设置筛选下拉框的字体大小 */
+    margin-left: 10px; /* 增加标签和下拉框之间的间距 */
+}
+
+#search-filter .bottom-row {
+    display: flex; /* 使用Flexbox布局，子元素横向排列 */
+    justify-content: center; /* 子元素居中对齐 */
+}
+
+#product-list {
+    display: grid; /* 使用网格布局来排列商品 */
+    grid-template-columns: repeat(5, 1fr); /* 每行显示5个商品，均匀分布 */
+    gap: 20px; /* 商品之间的间距 */
+    width: 80%; /* 容器宽度为页面的80% */
+    margin: 20px auto; /* 在容器外部添加间距并水平居中 */
+    max-height: 600px; /* 设置容器的最大高度 */
+    overflow-y: scroll; /* 启用纵向滚动条 */
+    background-color: rgba(126, 102, 102, 0.9); /* 设置半透明的白色背景 */
+    padding: 20px; /* 为容器添加内边距 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    border-radius: 10px; /* 为容器的边角添加圆角效果 */
+}
+
+.product-item {
+    background-color: rgba(255, 255, 255, 0.8); /* 设置半透明的白色背景 */
+    padding: 1rem; /* 为商品项添加内边距 */
+    border-radius: 10px; /* 为商品项边角添加圆角 */
+    text-align: center; /* 居中对齐内容 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加轻微的阴影效果 */
+    width: 200px; /* 固定商品项的宽度 */
+    height: 300px; /* 固定商品项的高度 */
+    display: flex; /* 使用 Flexbox 布局 */
+    flex-direction: column; /* 子元素纵向排列 */
+    align-items: center; /* 子元素水平居中对齐 */
+    justify-content: space-between; /* 子元素均匀分布 */
+}
+
+.product-item img {
+    width: 150px; /* 固定商品图片的宽度 */
+    height: 150px; /* 固定商品图片的高度 */
+    object-fit: cover; /* 保持图片的纵横比，并裁剪填满容器 */
+    border-radius: 10px; /* 为商品图片添加圆角效果 */
+}
+
+.product-item h3 {
+    margin: 5px 0; /* 设置商品名称的上下间距 */
+}
+
+.product-item p {
+    margin: 5px 0; /* 设置商品评分的上下间距 */
+    font-size: 0.9rem; /* 设置评分的字体大小 */
+}
+
+footer {
+    text-align: center; /* 页脚内容居中对齐 */
+    background-color: rgba(0, 0, 0, 0.8); /* 设置半透明的黑色背景 */
+    color: #fff; /* 设置页脚文字颜色为白色 */
+    padding: 1rem; /* 为页脚添加内边距 */
+    position: fixed; /* 将页脚固定在页面底部 */
+    width: 100%; /* 页脚宽度占满整个页面 */
+    bottom: 0; /* 页脚始终位于页面底部 */
+}
+
+
+
+
+
+
+.detail-container {
+    background-color: rgba(255, 255, 255, 0.9); /* 半透明背景 */
+    padding: 20px;
+    margin: 50px auto; /* 上下间距，左右居中 */
+    border-radius: 10px;
+    text-align: center; /* 中心对齐 */
+    max-width: 400px; /* 最大宽度 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+.detail-container img {
+    width: 100%; /* 让图片宽度占满容器 */
+    height: auto; /* 自适应高度 */
+    object-fit: cover;
+    border-radius: 10px; /* 圆角效果 */
+}
+
+.detail-container button {
+    padding: 10px 20px; /* 增加按钮内边距 */
+    font-size: 1.2rem; /* 增大字体 */
+    margin: 10px; /* 增加按钮间距 */
+    cursor: pointer; /* 鼠标指针变为手型 */
+}
+
+
+
+

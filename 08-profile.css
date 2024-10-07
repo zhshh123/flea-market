@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./images/背景.jpg');
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+}
+
+.info p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
